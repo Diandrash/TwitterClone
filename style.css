@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+    --primary : #020202;
+    --secondary : #ffffff;
+    --tertiary : #1d9bf0;
+}
+
+body {
+    background-color: #020202;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: #020202;
+}
+
+.rows {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.section-left {
+    left: 0;
+    background-color: #020202;
+    width: 21.329rem;
+    height: 100%;
+    position: fixed;
+}
+
+.section-left .list .logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.section-left .list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9rem;
+    margin-top: 12px;
+    margin-right: 40px;
+}
+
+.section-left .list .list-item {
+    display: flex;
+    margin: 10px;
+}
+
+.section-left .list-item ion-icon {
+    color: #ffffff;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+.section-left .list .list-item .btn-items h1{
+    color: #ffffff;
+    font-size: 1rem;
+    align-self: center;
+    font-weight: 400;
+}
+
+.section-left .list .list-item .btn-items{
+    display: flex;
+    color: #ffffff;
+    margin: 0px 0;
+    background-color: #020202;
+    padding: 0.5rem;
+    width: 15rem;
+    border-radius: 20px;
+    border: none;
+}
+.section-left .list .list-item :hover{
+    background-color: #353131;
+}
+
+
+
+.section-left .list .btn-tweet {
+    color: #ffffff;
+    background-color: #1d9bf0;
+    width: 100%;
+    padding: 0.58rem;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.section-left .list .btn-tweet  h1{
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+
+
+.section-center {
+    background-color: #020202;
+    margin-left: 21.329rem;
+    z-index: 1;
+    margin-right: 27.5rem;
+    width: 100%;
+    height: 100vh;
+    border-right: groove #ffffffb1 0.1px;
+    border-left: groove #ffffffb1 0.1px;
+}
+
+.section-center .main .main-title h1 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 1rem 0 2rem 1rem;
+    font-weight: 400;
+}
+.section-center .main-tweet .tweet-list {
+    border-top: solid #353131 1px;
+    border-bottom: solid #353131 1px;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item {
+    margin: 0 3rem;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .btn-main {
+    border: none;
+    background-color: #020202;
+    padding-top: 1rem;
+    margin: 2px 2px 0 0;
+}
+.section-center .main-tweet .tweet-list .tweet-item .row .img-profile img {
+    width: 3rem;
+    border-radius: 50%;
+}
+.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles {
+    display: flex;
+    border: none;
+}
+
+
+.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles  h2 {
+    font-size: 0.75rem;
+    margin-left: 8px;
+    color: #ffffff;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles  h3 {
+    font-size: 0.75rem;
+    margin-left: 2px;
+    color: #4c4949;
+    font-weight: 400;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles  h4 {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #615e5e;
+    margin-left: 2px;
+}
+.section-center .main-tweet .tweet-list .tweet-item .row {
+    display: flex;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .row-2 {
+    margin-left: 5px;
+}
+.section-center .main-tweet .tweet-list .tweet-item .row-2 .text {
+    text-align: left;
+}
+.section-center .main-tweet .tweet-list .tweet-item .row-2 .text p{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-left: 8px;
+    margin-bottom: 15px;
+}
+.section-center .main-tweet .tweet-list .tweet-item .row-2 img {
+    width: 20rem;
+    border-radius: 15px;
+    /* background-color: #1d9bf0; */
+}
+.section-center .main-tweet .tweet-list .tweet-item .row-2 img {
+    width: 100%;
+    margin-left: 8px;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .action {
+    display: flex;
+    margin: 0.6rem 0 10px 4rem;
+    /* background-color: #1d9bf0; */
+}
+.section-center .main-tweet .tweet-list .tweet-item .action .action-item ion-icon{
+    color: #ffffff;
+    align-self: center;
+    margin-right: 5px;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .action .action-item .btn1, .btn2, .btn3 {
+    color: #ffffff;
+    border: none;
+    background-color: #020202;
+    display: flex;
+    margin-right: 2rem;
+}
+.section-center .main-tweet .tweet-list .tweet-item .action .action-item:nth-child(1) :hover {
+    color: #1d9bf0;
+}
+.section-center .main-tweet .tweet-list .tweet-item .action .action-item:nth-child(2) :hover {
+    color: #11aa26;
+}
+.section-center .main-tweet .tweet-list .tweet-item .action .action-item:nth-child(3) :hover {
+    color: #f01d1d;
+}
+
+
+ 
+.section-right {
+    background-color: #020202;
+    position: fixed;
+    right: 0;
+    width: 27.5rem;
+    height: 100%;
+}
+
+.section-right .main-right {
+    margin: 0 7rem 0 2rem;
+}
+.section-right .main-right .input-search {
+    position: static;
+    width: 20rem;
+    margin-top: 1.5rem;
+}
+
+.section-right .main-right .input-search input {
+    width: 100%;
+    padding: 0.6rem;
+    background-color: #353131;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.section-right .trend {
+    margin-top: 2rem;
+    background-color: #353131;
+    width: 20rem;
+    padding-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.section-right .trend .trend-title h1 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+.section-right .trend .trend-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.section-right .trend .trend-list h2 {
+    font-size: 10px;
+    font-weight: 200;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+.section-right .trend .trend-list h1 {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+.section-right .trend .trend-list h3 {
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-left: 1rem;
+}
+.section-right .trend .trend-list .list-item {
+    margin: 0.25rem 0;
+}
+.section-right .trend .trend-list .list-item button {
+    width: 100%;
+    text-align: left;
+    background-color: #353131;
+    border: none;
+}
+.section-right .trend .trend-list .list-item :hover {
+    background-color: #4c4949;
+}
+
+    

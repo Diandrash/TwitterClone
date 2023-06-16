@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+    --primary : #020202;
+    --secondary : #ffffff;
+    --tertiary : #1d9bf0;
+}
+
+body {
+    background-color: #020202;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    background-color: #020202;
+    height: 1000vh;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.rows {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.section-left {
+    left: 0;
+    background-color: #020202;
+    width: 21.329rem;
+    height: 100%;
+    position: fixed;
+}
+
+.section-left .list .logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.section-left .list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9rem;
+    margin-top: 12px;
+    margin-right: 40px;
+}
+
+.section-left .list .list-item {
+    display: flex;
+    margin: 10px;
+}
+
+.section-left .list-item ion-icon {
+    color: #ffffff;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+.section-left .list .list-item .btn-items h1{
+    color: #ffffff;
+    font-size: 1rem;
+    align-self: center;
+    font-weight: 400;
+}
+
+.section-left .list .list-item .btn-items{
+    display: flex;
+    color: #ffffff;
+    margin: 0px 0;
+    background-color: #020202;
+    padding: 0.5rem;
+    width: 15rem;
+    border-radius: 20px;
+    border: none;
+}
+.section-left .list .list-item :hover{
+    background-color: #353131;
+}
+
+
+
+.section-left .list .btn-tweet {
+    color: #ffffff;
+    background-color: #1d9bf0;
+    width: 100%;
+    padding: 0.58rem;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.section-left .list .btn-tweet  h1{
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-center {
+    background-color: #020202;
+    margin-left: 21.329rem;
+    z-index: 1;
+    margin-right: 27.5rem;
+    width: 100%;
+    height: 100vh;
+    border-right: groove #ffffffb1 0.1px;
+    border-left: groove #ffffffb1 0.1px;
+}
+.section-center .main .main-title {
+    display: flex;
+    background-color: #020202;
+    width: 100%;
+    top: 0;
+    align-self: center;
+    padding-bottom: 1rem;
+}
+.section-center .main .main-title a {
+    align-self: center;
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+.section-center .main .main-title h1 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    align-self: center;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item {
+    margin: 0 1rem;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .btn-main {
+    border: none;
+    background-color: #020202;
+    padding-top: 1rem;
+    margin: 2px 2px 0 0;
+}
+.section-center .main-tweet .tweet-list .tweet-item .row .img-profile img {
+    width: 3rem;
+    border-radius: 50%;
+}
+.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles {
+    text-align: left;
+    border: none;
+}
+
+
+.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles  h2 {
+    font-size: 0.9rem;
+    margin-left: 8px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles  h3 {
+    font-size: 0.9rem;
+    margin-left: 8px;
+    margin-top: 3px;
+    color: #4c4949;
+    font-weight: 400;
+}
+.section-center .main-tweet .tweet-list .tweet-item .row {
+    display: flex;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .row-2 {
+    margin-left: 5px;
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .text p{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.section-center .main-tweet .tweet-list .tweet-item .img {
+    /* width: 20rem; */
+    border-radius: 15px;
+    /* background-color: #1d9bf0; */
+}
+.section-center .main-tweet .tweet-list .tweet-item .img img{
+    width: 100%;
+}
+.section-center .main-tweet .tweet-list .tweet-item .info {
+    display: flex;
+    color: #4c4949;
+    margin: 0.7rem 0 0 0;
+    padding-bottom: 0.7rem;
+    border-bottom: solid #353131 1px;
+}
+.section-center .main-tweet .tweet-list .tweet-item .info h2 {
+    font-size: 12px;
+    font-weight: 300;
+}
+.section-center .main-tweet .tweet-list .tweet-item .action {
+    display: flex;
+    text-align: left;
+    margin: 0.6rem 0 10px 0;
+    border-bottom: solid #353131 1px;
+    padding-bottom: 0.6rem;
+    /* background-color: #1d9bf0; */
+}
+
+.section-center .main-tweet .tweet-list .tweet-item .action .action-item{
+    display: flex;
+    margin-right: 1.5rem;
+}
+.section-center .main-tweet .tweet-list .tweet-item .action .action-item h2{
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin-right: 4px;
+}
+.section-center .main-tweet .tweet-list .tweet-item .action .action-item h3{
+    font-size: 0.8rem;
+    color: #4c4949;
+    font-weight: 400;
+}
+
+.action-tweet {
+    display: flex;
+    padding: 0.5rem 0 1rem 0;
+    border-bottom: solid #353131 1px;
+}
+.action-tweet img {
+    width: 3rem;
+    border-radius: 50%;
+}
+.action-tweet input {
+    align-self: center;
+    margin-left: 1rem;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: #020202;
+    color: #ffffff;
+    font-weight: 400;
+    box-shadow: none;
+    size: 1000;
+}
+.action-tweet  button {
+    color: #ffffff;
+    background-color: #1d9bf0;
+    width: 10rem;
+    border-radius: 20px;
+    border: none;
+    height: 2rem;
+    align-self: center;
+    /* padding: 0.5rem; */
+}
+
+.comment {
+    display: flex;
+    padding: 1rem 0;
+    border-bottom: solid #353131 1px;
+}
+.comment .img-profile img {
+    width: 3rem;
+    border-radius: 50%;
+}
+.comment .area {
+    margin-left: 10px;
+}
+
+.comment .profiles {
+    display: flex;
+}
+
+.comment h2 {
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+.comment h3 {
+    color: #4c4949;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-right: 5px;
+}
+.comment h4 {
+    color: #353131;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.comment .text-comment {
+   margin-top: 8px;
+}
+.comment .text-comment p{
+   color: #ffffff;
+   font-size: 0.7rem;
+   font-weight: 300
+}
+
+
+
+
+
+
+
+
+
+ 
+.section-right {
+    background-color: #020202;
+    position: fixed;
+    right: 0;
+    width: 27.5rem;
+    height: 100%;
+}
+
+.section-right .main-right {
+    margin: 0 7rem 0 2rem;
+}
+.section-right .main-right .input-search {
+    position: static;
+    width: 20rem;
+    margin-top: 1.5rem;
+}
+
+.section-right .main-right .input-search input {
+    width: 100%;
+    padding: 0.6rem;
+    background-color: #353131;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.section-right .trend {
+    margin-top: 2rem;
+    background-color: #353131;
+    width: 20rem;
+    padding-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.section-right .trend .trend-title h1 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+.section-right .trend .trend-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.section-right .trend .trend-list h2 {
+    font-size: 10px;
+    font-weight: 200;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+.section-right .trend .trend-list h1 {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+.section-right .trend .trend-list h3 {
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-left: 1rem;
+}
+.section-right .trend .trend-list .list-item {
+    margin: 0.25rem 0;
+}
+.section-right .trend .trend-list .list-item button {
+    width: 100%;
+    text-align: left;
+    background-color: #353131;
+    border: none;
+}
+.section-right .trend .trend-list .list-item :hover {
+    background-color: #4c4949;
+}
+
+    
