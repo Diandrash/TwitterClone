@@ -15,6 +15,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 html {
@@ -33,6 +35,8 @@ html {
     width: 21.329rem;
     height: 100%;
     position: fixed;
+    border-right: groove #ffffffb1 0.1px;
+
 }
 
 .section-left .list .logo {
@@ -109,8 +113,6 @@ html {
     margin-right: 27.5rem;
     width: 100%;
     height: 100vh;
-    border-right: groove #ffffffb1 0.1px;
-    border-left: groove #ffffffb1 0.1px;
 }
 
 .section-center .main .main-title h1 {
@@ -124,99 +126,271 @@ html {
     border-bottom: solid #353131 1px;
 }
 
-.section-center .main-tweet .tweet-list .tweet-item {
-    margin: 0 3rem;
+ .tweet-item {
+    margin: 0 1rem 0rem 1rem;
+    border-bottom: solid #353131 1px;
 }
 
-.section-center .main-tweet .tweet-list .tweet-item .btn-main {
+ .tweet-item .btn-main {
     border: none;
     background-color: #020202;
     padding-top: 1rem;
     margin: 2px 2px 0 0;
 }
-.section-center .main-tweet .tweet-list .tweet-item .row .img-profile img {
+ .tweet-item .row .img-profile img {
     width: 3rem;
     border-radius: 50%;
 }
-.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles {
+ .tweet-item .row .row-2 .profiles {
     display: flex;
     border: none;
 }
+.row-2 .img {
+    margin-right: 0rem;
+}
 
-
-.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles  h2 {
+ .tweet-item .row .row-2 .profiles  h2 {
     font-size: 0.75rem;
     margin-left: 8px;
     color: #ffffff;
 }
 
-.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles  h3 {
+ .tweet-item .row .row-2 .profiles  h3 {
     font-size: 0.75rem;
     margin-left: 2px;
     color: #4c4949;
     font-weight: 400;
 }
 
-.section-center .main-tweet .tweet-list .tweet-item .row .row-2 .profiles  h4 {
+ .tweet-item .row .row-2 .profiles  h4 {
     font-size: 0.75rem;
     font-weight: 300;
     color: #615e5e;
     margin-left: 2px;
 }
-.section-center .main-tweet .tweet-list .tweet-item .row {
+ .tweet-item .row {
     display: flex;
 }
 
-.section-center .main-tweet .tweet-list .tweet-item .row-2 {
+ .tweet-item .row-2 {
     margin-left: 5px;
 }
-.section-center .main-tweet .tweet-list .tweet-item .row-2 .text {
-    text-align: left;
+.dropdown {
+    margin-left: 10rem;
+    position: relative;
+    display: inline-block;
 }
-.section-center .main-tweet .tweet-list .tweet-item .row-2 .text p{
+.btn-dropdown {
+    color: #ffffff;
+    
+}
+ .drop-item{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #020202;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(97,94,94, 0.2);
+    z-index: 1;
+}
+.drop-item a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+    font-size: 0.75rem;
+  }
+
+  .drop-item a:hover {
+    background-color: #615e5e;
+  }
+  .drop-item ion-icon {
+    align-self: center;
+    margin-right: 5px;
+  }
+.dropdown:hover .drop-item {
+    display: block;
+  }
+
+ .tweet-item .row-2 .text {
+    text-align: left;
+    margin-top: 0.4rem;
+}
+ .tweet-item .row-2 .text p{
     color: #ffffff;
     font-weight: 300;
     font-size: 0.8rem;
     margin-left: 8px;
     margin-bottom: 15px;
 }
-.section-center .main-tweet .tweet-list .tweet-item .row-2 img {
+ .tweet-item .row-2 img {
     width: 20rem;
     border-radius: 15px;
     /* background-color: #1d9bf0; */
 }
-.section-center .main-tweet .tweet-list .tweet-item .row-2 img {
+ .tweet-item .row-2 img {
     width: 100%;
     margin-left: 8px;
 }
 
-.section-center .main-tweet .tweet-list .tweet-item .action {
+ .tweet-item .action {
     display: flex;
     margin: 0.6rem 0 10px 4rem;
     /* background-color: #1d9bf0; */
 }
-.section-center .main-tweet .tweet-list .tweet-item .action .action-item ion-icon{
+ .tweet-item .action .action-item ion-icon{
     color: #ffffff;
     align-self: center;
     margin-right: 5px;
 }
 
-.section-center .main-tweet .tweet-list .tweet-item .action .action-item .btn1, .btn2, .btn3 {
+ .tweet-item .action .action-item .btn1, .btn2, .btn3 {
     color: #ffffff;
     border: none;
     background-color: #020202;
     display: flex;
     margin-right: 2rem;
 }
-.section-center .main-tweet .tweet-list .tweet-item .action .action-item:nth-child(1) :hover {
+ .tweet-item .action .action-item:nth-child(1) :hover {
     color: #1d9bf0;
 }
-.section-center .main-tweet .tweet-list .tweet-item .action .action-item:nth-child(2) :hover {
+ .tweet-item .action .action-item:nth-child(2) :hover {
     color: #11aa26;
 }
-.section-center .main-tweet .tweet-list .tweet-item .action .action-item:nth-child(3) :hover {
+ .tweet-item .action .action-item:nth-child(3) :hover {
     color: #f01d1d;
 }
+
+
+.header {
+    display: flex;
+    /* background-color: #353131; */
+    padding: 0.7rem 0;
+}
+.header a {
+    color: white;
+    align-self: center;
+    margin: 0rem 1.5rem 0 1rem;
+    font-size: 1rem;
+}
+.header .header-title h1 {
+    color: #ffffff;
+    font-size: 1rem;
+}
+.header .header-title h2 {
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.header-profile .banner {
+    width: 100%;
+    height: 10rem;
+    background-color: #11aa26;
+}
+
+.profile {
+    position: absolute;
+    top: 10.5rem;
+    z-index: 2;
+    width: 8rem;
+    border-radius: 50%;
+    margin-left: 1.6rem;
+    border: solid #020202 5px;
+}
+
+.edit {
+    color: #ffffff;
+    text-align: right;
+    font-size: 0.7rem;
+    /* background-color: #11aa26; */
+}
+
+.btn-edit {
+    padding: 0.3rem 1rem;
+    background-color: #1d9bf0;
+    background-color: transparent;
+    color: #ffffff;
+    border: solid #ffffff 1px;
+    margin: 0.4rem 1rem;
+    border-radius: 25px;
+    font-weight: 400;
+}
+.btn-edit:hover {
+    background-color: #353131;
+}
+
+.profile-text {
+    color: white;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+.profile-text h1 {
+    font-size: 1rem;
+    color: #ffffff;
+}
+.profile-text h2 {
+    font-size: 0.77rem;
+    color: #615e5e;
+}
+.profile-text p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+.profile-text .date {
+    display: flex;
+    font-size: 0.8rem;
+    margin-top: 7px;
+}
+.profile-text .date ion-icon{
+    /* font-size: 0.8rem; */
+    align-self: center;
+    margin-right: 10px;
+}
+.profile-text .date h3{
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+.tweet-header {
+    color: #ffffff;
+    /* border-bottom: solid #353131 1px; */
+    margin-top: 2.5rem;
+    padding-bottom: 0.3rem;
+    display: flex;
+    justify-content: center;
+}
+.tweet-header h1 {
+    font-size: 1rem;
+    padding-bottom: 5px;
+    border-bottom: solid #020202 3px;
+}
+.tweet-header h1:hover {
+    border-bottom: solid #1d9bf0 3px;
+}
+
+.tweet-profile {
+    /* background-color: #11aa26; */
+    border-top: solid #4c4949 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
@@ -226,6 +400,8 @@ html {
     right: 0;
     width: 27.5rem;
     height: 100%;
+    border-left: groove #ffffffb1 0.1px;
+
 }
 
 .section-right .main-right {
